@@ -4,6 +4,9 @@
     font-style: normal;
     margin: 0;
  }
+ html{
+    scroll-behavior: smooth;
+ }
   
  /* text add an image */
 
@@ -50,3 +53,4 @@
     background-repeat: no-repeat;
     background-position: 860px;
 }
+

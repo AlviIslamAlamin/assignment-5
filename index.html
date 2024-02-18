@@ -51,7 +51,7 @@
                 <h1>End-to-End Travel with </h1>
                 <h2 class="text-[#1DD100]">P Paribahan</h2>
                 <p >P Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
-                <a href="#paribahan" class="btn bg-[#1DD100] text-black border-none mt-4">Buy Tickets</a>
+                <a href="#paribahan" type="button" class="btn bg-[#1DD100] text-black border-none mt-4">Buy Tickets</a>
                </div>
             </div>
         </section>
@@ -112,7 +112,7 @@
                       </div>
                       <div>
                          <button class="btn border-none  bg-[#1DD1005c] mt-10 text-xl  "> 
-                           40 Seats left
+                           <span  id="left-seat">12</span> Seats left
                          </button>
                       </div>
                     </div>
@@ -162,25 +162,25 @@
                 <div class="mt-6">
                   <div class="grid grid-cols-10 gap-4 items-center col-span-2"> 
                     <h1>A</h1>
-                    <button class="btn col-span-2">A1</button>
-                    <button class="btn col-span-2">A2</button>
+                    <button onclick="A1()" id="A1" class="btn col-span-2 ">A1</button>
+                    <button onclick="A2()" id="A2" class="btn col-span-2">A2</button>
                     <br>
-                    <button class="btn col-span-2">A3</button>
-                    <button class="btn col-span-2">A4</button>
+                    <button onclick="A3()" id="A3" class="btn col-span-2">A3</button>
+                    <button onclick="A4()" id="A4" class="btn col-span-2">A4</button>
   
                     <h1>B</h1>
-                    <button class="btn col-span-2">B1</button>
-                    <button class="btn col-span-2">B2</button>
+                    <button onclick="B1()" id="B1" class="btn col-span-2">B1</button>
+                    <button onclick="B2()" id="B2" class="btn col-span-2">B2</button>
                     <br>
-                    <button class="btn col-span-2">B3</button>
-                    <button class="btn col-span-2">B4</button>
+                    <button onclick="B3()" id="B3" class="btn col-span-2">B3</button>
+                    <button onclick="B4()" id="B4" class="btn col-span-2">B4</button>
   
                     <h1>C</h1>
-                    <button class="btn col-span-2">C1</button>
-                    <button class="btn col-span-2">C2</button>
+                    <button onclick="C1()" id="C1" class="btn col-span-2">C1</button>
+                    <button onclick="C2()" id="C2" class="btn col-span-2">C2</button>
                     <br>
-                    <button class="btn col-span-2">C3</button>
-                    <button class="btn col-span-2">C4</button>
+                    <button onclick="C3()" id="C3" class="btn col-span-2">C3</button>
+                    <button onclick="C4()" id="C4" class="btn col-span-2">C4</button>
                   </div>
                 </div>
               </div>
@@ -188,25 +188,25 @@
                 <h1 class="text-4xl font-bold mb-5 border-b-2 border-dashed pb-5">Select Your Seat</h1>
                  <div class="bg-[#F7F8F8] rounded-xl p-4">
                     <div class="flex justify-between border-b-2 border-dashed pb-3">
-                       <div><p class="font-bold">Seat <span class="badge bg-[#1DD100] text-white">0</span></p></div>
+                       <div><p class="font-bold">Seat <span id="badge" class="badge bg-[#1DD100] text-white">0</span></p></div>
                        <div><p class="font-bold">Class</p></div>
                        <div><p class="font-bold">Price</p></div>
                     </div>
-                    <div class="mb-28">
+                    <div class="mb-20" id="calculate-area">
 
                     </div>
                     <hr>
                     <div class="flex justify-between mt-3 mb-3">
                        <h1 class="font-bold">Total Price</h1>
-                       <h1 class="font-bold">BDT <span>0000</span></h1>
+                       <h1 class="font-bold">BDT <span id="total-price">0</span></h1>
                     </div>
                     <label class="input input-bordered flex items-center gap-5">
                       <input type="text" class="grow" placeholder="Have any copupon?" />
                       <button class="btn btn-sm bg-[#1DD100] text-white">Apply</button>
                     </label>
                     <div class="flex justify-between mt-3 mb-3">
-                      <h1 class="font-bold">Grandz Price</h1>
-                      <h1 class="font-bold">BDT <span>0000</span></h1>
+                      <h1 class="font-bold">Grand Price</h1>
+                      <h1 class="font-bold">BDT <span id="grand-price">0</span></h1>
                    </div>
                  </div>
               </div>
@@ -214,5 +214,7 @@
         </section>
         <!-- ph paribahan section end -->
     </main>
+    <script src="scripts/buy-ticket.js"></script>
+    <script src="scripts/seats.js"></script>
 </body>
 </html>
