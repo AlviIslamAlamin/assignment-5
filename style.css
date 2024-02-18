@@ -5,3 +5,48 @@
     margin: 0;
  }
   
+ /* text add an image */
+
+ .container {
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.text-overlay h1{
+    font-size: 58px;
+    font-weight: bold;
+}
+.text-overlay h2 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* best offers css */
+
+.offers{
+    background-image: url('images/cupon-devider.png');
+    background-repeat: no-repeat;
+    background-position: 290px;
+}
+
+
+
+.ticket{
+    background-image: url('images/info-devider.png');
+    background-repeat: no-repeat;
+    background-position: 860px;
+}

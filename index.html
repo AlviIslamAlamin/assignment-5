@@ -15,6 +15,204 @@
     <link rel="stylesheet" href="style.css" class="css">
 </head>
 <body>
-    
+    <header  class="mx-[120px] my-[30px]">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    
+                  </div>
+                  <a class="text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[18px]">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end   ">
+                  <div class="flex gap-4 border-2 bg-[#1DD1001A] rounded-md px-5 py-2">
+                    <a class=""><span class="text-[#1DD100] text-[19px] font-bold">Bus</span></a>
+                    <img src="images/bus-icon.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!-- background image section start -->
+        <section class="mx-[35px] my-[60px]">
+            <div class="container">
+                <img src="images/banner.png" alt="">
+               <div class="text-overlay">
+                <h1>End-to-End Travel with </h1>
+                <h2 class="text-[#1DD100]">P Paribahan</h2>
+                <p >P Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
+                <a href="#paribahan" class="btn bg-[#1DD100] text-black border-none mt-4">Buy Tickets</a>
+               </div>
+            </div>
+        </section>
+        <!-- background image section end -->
+    </header>
+    <main>
+        <!-- best offers section start -->
+        <section  class="mx-[120px] my-[30px]">
+            <h2 class="text-center text-4xl font-extrabold mb-9">Best offers for you</h2>
+          <div class="flex justify-center gap-8">
+                <div class="flex bg-[#FFBF0F] rounded-xl px-20 py-12  gap-20 items-center offers">
+                  <div>
+                    <h3 class="text-4xl font-bold mb-3">15% OFF</h3>
+                    <p class="font-bold text-xl mb-3">on your next purchase</p>
+                    <p>use by January 2025</p>
+                  </div>
+                    <div class="text-center">
+                        <h4 class="text-4xl font-bold mb-3">NEW<sub>15</sub></h4>
+                        <p class="text-xl mb-3">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex bg-[#F78C9C]  rounded-xl px-20 py-12  justify-between gap-20 items-center offers">
+                    <div>
+                        <h3 class="text-4xl font-bold mb-3">20% OFF</h3>
+                    <p class="font-bold text-xl mb-3">on your next purchase</p>
+                    <p>use by January 2025</p>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-4xl font-bold mb-3">Couple 20</h4>
+                        <p class="text-xl mb-3 ">Coupon Code</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex justify-center items-center">
+              <button class="btn  border-[#1DD100] mt-10 text-xl text-[#1DD100] ">See All Offers 
+              </button>
+            </div>
+        </section>
+        <!-- best offers section end -->
+
+        <!-- ph paribahan section start -->
+        <section id="paribahan" class="bg-[#F7F8F8] rounded-t-[200px] border-t-2 border-[#1DD100] px-10 py-10">
+          <div class=" text-center">
+            <h2 class="text-4xl font-bold my-12 mb-5">P.H Paribahan</h2>
+            <p>P.H Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
+          </div>
+          <div class="ticket mx-32 shadow-xl bg-white px-10 py-10 rounded-3xl grid grid-cols-4 gap-16 mt-10">
+               <div class="col-span-3">
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex gap-4">
+                        <img src="images/bus-logo.png" alt="">
+                         <div>
+                            <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                            <p class="font-bold">Coach-009-WEB ! AC_Business</p>
+                         </div>
+                      </div>
+                      <div>
+                         <button class="btn border-none  bg-[#1DD1005c] mt-10 text-xl  "> 
+                           40 Seats left
+                         </button>
+                      </div>
+                    </div>
+
+                    <div class="bg-[#F7F8F8] mt-5 rounded-xl">
+                        <div class="flex items-center justify-between border-b-2 border-dashed py-5 px-3 mx-6">
+                          <p>Route</p>
+                          <p>Dhaka - Sylhet</p>
+                        </div>
+                        <div class="flex items-center justify-between border-b-2 border-dashed py-5 px-3 mx-6">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <div class="flex items-center  py-5 px-3 mx-6 justify-between">
+                          <button class="btn no-animation w-[full]">Boarding Point - Laxmipur</button>
+                          <button class="btn no-animation w-[25%]">Dropping Point - Bogura</button>
+                          <button class="btn no-animation w-[25%]">Est. Time - 11 Hour</button>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div>
+
+                  </div>
+               </div>
+               
+               <div class="flex flex-col justify-center items-center">
+                  <img src="images/fare.png" alt="" class="mb-5">
+                  <h2 class="text-4xl font-bold">550 Taka</h2>
+                  <p>Per Seat</p>
+               </div>
+          </div>
+
+          <div class="bg-white px-10 grid grid-cols-3 py-10 rounded-3xl mx-32 mt-6 ">
+              <div class="col-span-2 mt-6 border-r-2 px-10 border-dashed">
+                <h1 class="text-4xl font-bold mb-5">Select Your Seat</h1>
+                <div class="flex justify-between border-t-2 border-b-2 border-dashed py-5">
+                  <div class="flex gap-3 items-center">
+                      <img src="images/seat-gray.png" alt="">
+                      <h2>Available</h2>
+                  </div>
+                  <div class="flex gap-3 items-center">
+                      <img src="images/seat-green-filled.png" alt="">
+                      <h2>Selected</h2>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <div class="grid grid-cols-10 gap-4 items-center col-span-2"> 
+                    <h1>A</h1>
+                    <button class="btn col-span-2">A1</button>
+                    <button class="btn col-span-2">A2</button>
+                    <br>
+                    <button class="btn col-span-2">A3</button>
+                    <button class="btn col-span-2">A4</button>
+  
+                    <h1>B</h1>
+                    <button class="btn col-span-2">B1</button>
+                    <button class="btn col-span-2">B2</button>
+                    <br>
+                    <button class="btn col-span-2">B3</button>
+                    <button class="btn col-span-2">B4</button>
+  
+                    <h1>C</h1>
+                    <button class="btn col-span-2">C1</button>
+                    <button class="btn col-span-2">C2</button>
+                    <br>
+                    <button class="btn col-span-2">C3</button>
+                    <button class="btn col-span-2">C4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="px-5 mt-6 ">
+                <h1 class="text-4xl font-bold mb-5 border-b-2 border-dashed pb-5">Select Your Seat</h1>
+                 <div class="bg-[#F7F8F8] rounded-xl p-4">
+                    <div class="flex justify-between border-b-2 border-dashed pb-3">
+                       <div><p class="font-bold">Seat <span class="badge bg-[#1DD100] text-white">0</span></p></div>
+                       <div><p class="font-bold">Class</p></div>
+                       <div><p class="font-bold">Price</p></div>
+                    </div>
+                    <div class="mb-28">
+
+                    </div>
+                    <hr>
+                    <div class="flex justify-between mt-3 mb-3">
+                       <h1 class="font-bold">Total Price</h1>
+                       <h1 class="font-bold">BDT <span>0000</span></h1>
+                    </div>
+                    <label class="input input-bordered flex items-center gap-5">
+                      <input type="text" class="grow" placeholder="Have any copupon?" />
+                      <button class="btn btn-sm bg-[#1DD100] text-white">Apply</button>
+                    </label>
+                    <div class="flex justify-between mt-3 mb-3">
+                      <h1 class="font-bold">Grandz Price</h1>
+                      <h1 class="font-bold">BDT <span>0000</span></h1>
+                   </div>
+                 </div>
+              </div>
+          </div>
+        </section>
+        <!-- ph paribahan section end -->
+    </main>
 </body>
 </html>
