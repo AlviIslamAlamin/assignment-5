@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>P-Ticket</title>
+    <link rel="shortcut icon" href="images/ticket.png" type="image/x-icon">
     <!-- daisy ui link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="style.css" class="css">
 </head>
 <body>
-    <header  class="mx-[120px] my-[30px]">
+    <header  class="lg:mx-[120px] lg:my-[30px]">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -25,7 +26,7 @@
                     </div>
                     
                   </div>
-                  <a class="text-4xl font-extrabold">P-Ticket</a>
+                  <a class="lg:text-4xl font-extrabold text-3xl">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-[18px]">
@@ -44,14 +45,14 @@
               </div>
         </nav>
         <!-- background image section start -->
-        <section class="mx-[35px] my-[60px]">
+        <section class="lg:mx-[40px] my-[60px] mx-[20px]">
             <div class="container">
-                <img src="images/banner.png" alt="">
+                <img src="images/banner.png" alt="" class="h-[250px] lg:h-full">
                <div class="text-overlay">
-                <h1>End-to-End Travel with </h1>
+                <h1 class="text-xl">End-to-End Travel with </h1>
                 <h2 class="text-[#1DD100]">P Paribahan</h2>
                 <p >P Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
-                <a href="#paribahan" type="button" class="btn bg-[#1DD100] text-black border-none mt-4">Buy Tickets</a>
+                <a href="#paribahan" type="button" class="btn bg-[#1DD100] text-black border-none lg:mt-4">Buy Tickets</a>
                </div>
             </div>
         </section>
@@ -59,28 +60,28 @@
     </header>
     <main>
         <!-- best offers section start -->
-        <section  class="mx-[120px] my-[30px]">
-            <h2 class="text-center text-4xl font-extrabold mb-9">Best offers for you</h2>
-          <div class="flex justify-center gap-8">
-                <div class="flex bg-[#FFBF0F] rounded-xl px-20 py-12  gap-20 items-center offers">
+        <section  class="lg:mx-[120px] mx-4 my-[30px]">
+            <h2 class="text-center text-[28px] lg:text-4xl font-extrabold mb-9">Best offers for you</h2>
+          <div class="flex lg:flex-row flex-col justify-center gap-8">
+                <div class="flex bg-[#FFBF0F] rounded-xl lg:px-20 px-10 py-8 lg:py-12 gap-32 lg:gap-20 items-center offers">
                   <div>
                     <h3 class="text-4xl font-bold mb-3">15% OFF</h3>
                     <p class="font-bold text-xl mb-3">on your next purchase</p>
                     <p>use by January 2025</p>
                   </div>
                     <div class="text-center">
-                        <h4 class="text-4xl font-bold mb-3">NEW<sub>15</sub></h4>
+                        <h4 class="text-2xl lg:text-4xl font-bold mb-3">NEW<sub>15</sub></h4>
                         <p class="text-xl mb-3">Coupon Code</p>
                     </div>
                 </div>
-                <div class="flex bg-[#F78C9C]  rounded-xl px-20 py-12  justify-between gap-20 items-center offers">
+                <div class="flex  bg-[#F78C9C]  rounded-xl lg:px-20 px-10 py-8 lg:py-12 justify-between lg:gap-20 gap-32 items-center offers">
                     <div>
                         <h3 class="text-4xl font-bold mb-3">20% OFF</h3>
                     <p class="font-bold text-xl mb-3">on your next purchase</p>
                     <p>use by January 2025</p>
                     </div>
                     <div class="text-center">
-                        <h4 class="text-4xl font-bold mb-3">Couple 20</h4>
+                        <h4 class="text-2xl lg:text-4xl font-bold mb-3">Couple 20</h4>
                         <p class="text-xl mb-3 ">Coupon Code</p>
                     </div>
                 </div>
@@ -99,20 +100,20 @@
             <h2 class="text-4xl font-bold my-12 mb-5">P.H Paribahan</h2>
             <p>P.H Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
           </div>
-          <div class="ticket mx-32 shadow-xl bg-white px-10 py-10 rounded-3xl grid grid-cols-4 gap-16 mt-10">
-               <div class="col-span-3">
+          <div class="ticket lg:mx-32 shadow-xl bg-white px-10 py-10 rounded-3xl grid grid-cols-1 lg:grid-cols-4 gap-16 mt-10">
+               <div class="lg:col-span-3">
                   <div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex gap-4">
-                        <img src="images/bus-logo.png" alt="">
+                    <div class="flex lg:flex-row flex-col lg:items-center lg:justify-between">
+                      <div class="flex  gap-4 items-start">
+                        <img src="images/bus-logo.png" alt="" class=" w-12 h-12">
                          <div>
-                            <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                            <h1 class="lg:text-3xl font-bold">Greenline Paribahan</h1>
                             <p class="font-bold">Coach-009-WEB ! AC_Business</p>
                          </div>
                       </div>
                       <div>
-                         <button class="btn border-none  bg-[#1DD1005c] mt-10 text-xl  "> 
-                           <span  id="left-seat">12</span> Seats left
+                         <button class="btn border-none  bg-[#1DD1005c] mt-3 lg:mt-10 lg:text-xl w-[100%]"> 
+                           <img src="images/seat-green.png" alt=""><span  id="left-seat">12</span> Seats left
                          </button>
                       </div>
                     </div>
@@ -126,10 +127,10 @@
                             <p>Departure Time</p>
                             <p>9:00 PM</p>
                         </div>
-                        <div class="flex items-center  py-5 px-3 mx-6 justify-between">
-                          <button class="btn no-animation w-[full]">Boarding Point - Laxmipur</button>
-                          <button class="btn no-animation w-[25%]">Dropping Point - Bogura</button>
-                          <button class="btn no-animation w-[25%]">Est. Time - 11 Hour</button>
+                        <div class="flex lg:flex-row flex-col lg:items-center  py-5 px-3 lg:mx-6  lg:justify-between">
+                          <button class="btn no-animation w-[full] lg:mt-0 mt-4">Boarding Point - Laxmipur</button>
+                          <button class="btn no-animation lg:w-[25%] w-[full] lg:mt-0 mt-4">Dropping Point - Bogura</button>
+                          <button class="btn no-animation lg:w-[25%] w-[full] lg:mt-0 mt-4">Est. Time - 11 Hour</button>
                         </div>
                     </div>
                   </div>
@@ -144,8 +145,8 @@
                </div>
           </div>
 
-          <div class="bg-white px-10 grid grid-cols-3 py-10 rounded-3xl mx-32 mt-6 ">
-              <div class="col-span-2 mt-6 border-r-2 px-10 border-dashed">
+          <div class="bg-white lg:px-10 grid grid-cols-1 lg:grid-cols-3 py-10 rounded-3xl lg:mx-32 mt-6 ">
+              <div class="col-span-2 mt-6 lg:border-r-2 px-10 border-dashed mb-6 lg:mb-0">
                 <h1 class="text-4xl font-bold mb-5">Select Your Seat</h1>
                 <div class="flex justify-between border-t-2 border-b-2 border-dashed py-5">
                   <div class="flex gap-3 items-center">
